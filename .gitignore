@@ -1,0 +1,30 @@
+# Vendored tree-sitter (platform-specific compiled wheels) — reinstall with:
+#   pip install -r requirements.txt --target .pylibs
+.pylibs/
+__pycache__/
+.pytest_cache/
+*.pyc
+
+# Output of running generate.sh against THIS repo itself (self-analysis while
+# testing) — .tsv is not blanket-ignored, since a future testdata/ fixture
+# directory needs to commit its own.
+/.flutter-city/
+/codemap.tsv
+/codemap-packages.tsv
+/codemap-modules.tsv
+/cochange-edges.tsv
+/complexity-per-file.tsv
+/complexity-per-class.tsv
+/fanio-per-file.tsv
+/coupling-edges.tsv
+/crap-per-file.tsv
+/deadcode-per-file.tsv
+
+.DS_Store
+.venv/
+venv/
+
+# Internal dev-workflow scaffolding (specs/plans full of local paths) — not
+# part of the public project, code-city ships none of this either.
+docs/superpowers/
+.claude/
