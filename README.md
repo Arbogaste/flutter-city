@@ -16,7 +16,7 @@ server. Mail it, publish it on Pages, open it from disk.
 ```bash
 git clone <this repo> ~/flutter-city
 ~/flutter-city/generate.sh ~/workspace/your-flutter-repo
-open ~/workspace/your-flutter-repo/.flutter-city/codecity.html
+xdg-open ~/workspace/your-flutter-repo/.flutter-city/codecity.html   # macOS: open, Windows: start
 ```
 
 That's the whole configuration: the repo to analyse. First run vendors
@@ -93,7 +93,6 @@ Both need `pip install playwright && playwright install chromium`.
   verbatim (Unlicense) with no logic changes, so they carry over code-city's own testing
   as-is.
 - No `testdata/` fixture directory for an end-to-end regression run.
-- No demo screenshot in this README.
 
 ## Credits
 
