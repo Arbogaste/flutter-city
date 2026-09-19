@@ -9,6 +9,8 @@ Dart/Flutter.
 Output is a single self-contained HTML file — data inlined, libraries from a CDN, no
 server. Mail it, publish it on Pages, open it from disk.
 
+![flutter-city example](docs/example.png)
+
 ## Quick start
 
 ```bash

@@ -16,7 +16,7 @@ FIXTURE_TSV = (
 def test_render_codecity_strips_dart_extension(tmp_path):
     (tmp_path / "codemap.tsv").write_text(FIXTURE_TSV)
     env = dict(os.environ, HEATMAP_OUT=str(tmp_path), HEATMAP_REPO=str(tmp_path))
-    here = Path(__file__).resolve().parent
+    here = Path(__file__).resolve().parent.parent
     result = subprocess.run(
         [sys.executable, str(here / "render_codecity.py"), str(tmp_path / "codemap.tsv")],
         env=env, capture_output=True, text=True,
